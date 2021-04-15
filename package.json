@@ -1,6 +1,6 @@
 {
   "name": "todolist",
-  "homepage": "http://kazukazu2027.github.io/todo-react-list",
+  "homepage": "http://kazukazu2027.github.io/reactTodoList",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +20,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && gh-pages -d build"
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "format": "prettier --write ./src/**/*.{js,jsx}"
   },
   "eslintConfig": {
     "extends": [
