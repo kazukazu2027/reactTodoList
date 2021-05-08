@@ -7,7 +7,7 @@ const AddArea = (props) => {
   return (
     <SAddArea>
       <SInput
-        placeholder="TODOを入力してね"
+        placeholder="TODOを入力"
         value={todoText}
         onChange={onChange}
         type="text"
